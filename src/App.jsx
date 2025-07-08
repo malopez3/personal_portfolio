@@ -2,6 +2,8 @@ import React from 'react';
 import Navbar from './components/Navbar'; 
 import About from './components/About';
 import Experience from './components/Experience';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 import { FaGithub, FaLinkedin } from 'react-icons/fa'; // ← New icons here
 
 function App() {
@@ -31,7 +33,7 @@ function App() {
           {/* Social Icons (linkedin and github) */}
           <div className = "flex justify-center gap-6 pt-4">
             <a
-              href = "https://linkedin.com" //Update link
+              href = "https://www.linkedin.com/in/marco-lopez-926a93283/" //Update link
               target = "_blank"
               rel = "noopener noreferrer"
               className = "text-black hover:text-gray-600 transition"
@@ -51,6 +53,8 @@ function App() {
       </main>
       <About/>
       <Experience/>
+      <Projects/>
+      <Contact/>
     </div>
     </>
   );
