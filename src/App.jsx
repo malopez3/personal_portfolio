@@ -41,7 +41,7 @@ function App() {
               <FaLinkedin size = {28} />
             </a>
               <a
-                href = "https://github.com"
+                href = "https://github.com/malopez3"
                 target = "_blank"
                 rel = "noopener noreferrer"
                 className = "test-black hover:text-gray-600 transition"
@@ -55,6 +55,16 @@ function App() {
       <Experience/>
       <Projects/>
       <Contact/>
+
+      {/* FOOTER */}
+
+      <footer className="text-center py-4 text-sm text-gray-500">
+        © {new Date().getFullYear()} Marco Lopez. All rights reserved.
+
+      <p className="mt-2 text-xs text-gray-400 max-w-xl mx-auto px-4">
+        Logos are used for identification and educational purposes only. All trademarks and brands are the property of their respective owners.
+      </p>
+      </footer>
     </div>
     </>
   );
