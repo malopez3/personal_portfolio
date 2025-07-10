@@ -3,7 +3,6 @@ import Navbar from './components/Navbar';
 import About from './components/About';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
-import Contact from './components/Contact';
 import { FaGithub, FaLinkedin } from 'react-icons/fa'; // ← New icons here
 
 function App() {
@@ -21,15 +20,6 @@ function App() {
           <h1 className="text-5xl font-extrabold">Hello, I'm Marco Lopez</h1>
           <h2 className="text-2xl font-medium text-gray-800">I'm a Data Scientist</h2>
 
-          {/* Contact info button */}
-          <div className="flex justify-center gap-4">
-            <a
-              href="#contact"
-              className="bg-white text-black border border-black px-6 py-2 rounded hover:bg-gray-100 transition"
-            >
-              Contact
-            </a>
-          </div>
           {/* Social Icons (linkedin and github) */}
           <div className = "flex justify-center gap-6 pt-4">
             <a
@@ -54,7 +44,6 @@ function App() {
       <About/>
       <Experience/>
       <Projects/>
-      <Contact/>
 
       {/* FOOTER */}
 
