@@ -16,9 +16,9 @@ const About = () => {
                 {/* ABOUT ME SECTION */}
                 <h2 className = "text-4xl font-bold text-center">About Me</h2>
                 <p className = "text-lg leading-relaxed text-gray-800">
-                    Hello! My name is Marco and I'm currently a grad student at Northeastern pursuing my master's degree in Data Science.
+                    Hello! My name is Marco and I'm currently a graduate student at Northeastern pursuing my master's degree in Data Science.
                     I graduated from UMass Amherst in 2025 with a bachelor's degree in Mathematics, 
-                    with a concentration in Statistics and Data Science and minor in Computer Science.
+                    with a concentration in Statistics and Data Science and a minor in Computer Science.
                 </p>
                 <p className="text-lg leading-relaxed text-gray-800">
                     My goal after completing my graduate studies is to work as a Data Scientist.
