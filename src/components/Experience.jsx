@@ -18,7 +18,7 @@ const Experience = () => {
           <h3 className="text-2xl font-semibold">Data Science Intern – FAA</h3>
           <p className="text-sm text-gray-600">May 2024 – August 2024</p>
           <ul className="list-disc list-inside space-y-1 text-gray-800">
-            <li>Conducted exploratory data analysis and created interactive dashboards (Power BI) to support program reviews and strategic initiatives.</li>
+            <li>Conducted exploratory data analysis and created interactive dashboards (using Power BI) to monitor spending and ensure meeting of budget goals.</li>
             <li>Extracted and analyzed large datasets from FAA systems to uncover key performance metrics, identify trends, and improve investigative workflows using Python and Excel.</li>
             <li>Led a data-driven capstone project on employee attrition, delivering actionable recommendations to federal leadership through statistical analysis and compelling visual storytelling.</li>
           </ul>
