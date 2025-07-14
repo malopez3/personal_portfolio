@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import FAA from '../assets/FAA.png'
 
 const Experience = () => {
   return (
@@ -15,6 +16,9 @@ const Experience = () => {
 
         {/* FAA Internship Experience */}
         <div className="space-y-2">
+          <div className="flex items-center gap-4">
+            <img src={FAA} alt="FAA logo" className="w-20 h-20" />
+            </div>
           <h3 className="text-2xl font-semibold">Data Science Intern – FAA</h3>
           <p className="text-sm text-gray-600">May 2024 – August 2024</p>
           <ul className="list-disc list-inside space-y-1 text-gray-800">
