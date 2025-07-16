@@ -1,15 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import airplane from '../assets/AIRPLANE.jpg';
 
 // PROJECTS
 
 const projects = [
   {
-    title: 'TBA',
-    description: 'TBA.',
-    image: '/assets/project1.png',
-    github: 'https://github.com/yourusername/project1-live',
-    code: 'https://github.com/yourusername/project1-code'
+    title: 'Optimizing Airline Profitability through Data-Driven Insights',
+    description: 'Used Python (pandas, seaborn) and SQL (JOINs, GROUP BY) to analyze airline operations data, uncovering profit-boosting strategies through occupancy analysis, aircraft performance metrics, and pricing insights.',
+    image: airplane,
+    github: 'https://github.com/malopez3/airline_data_analysis/blob/main/Airline%20Data%20Analysis.ipynb',
+    code: 'https://github.com/malopez3/airline_data_analysis/blob/main/Airline%20Data%20Analysis.ipynb'
   },
   {
     title: 'TBA',
