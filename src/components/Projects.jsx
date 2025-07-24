@@ -1,16 +1,18 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import airplane from '../assets/AIRPLANE.jpg';
+import airplane_new_zealand from '../assets/airplane_new_zealand.jpg';
 
 // PROJECTS
 
 const projects = [
   {
     title: 'Optimizing Airline Profitability through Data-Driven Insights',
-    description: 'Used Python (pandas, seaborn) and SQL (JOINs, GROUP BY) to analyze airline operations data, uncovering profit-boosting strategies through occupancy analysis, aircraft performance metrics, and pricing insights.',
-    image: airplane,
+    description: 'Used Python (pandas, seaborn) and SQL (JOINs, GROUP BY) to analyze airline operations data, examining profit-boosting strategies through aircraft occupancy analysis and aircraft pricing insights.',
+    image: airplane_new_zealand,
     github: 'https://github.com/malopez3/airline_data_analysis/blob/main/Airline%20Data%20Analysis.ipynb',
-    code: 'https://github.com/malopez3/airline_data_analysis/blob/main/Airline%20Data%20Analysis.ipynb'
+    code: 'https://github.com/malopez3/airline_data_analysis/blob/main/Airline%20Data%20Analysis.ipynb',
+    caption: 'A large jetliner flying through a cloudy sky. Aeroplane airplane boeing 737. Image published under Creative Commons CC0 1.0 Universal Public Domain Dedication license.'
   },
   {
     title: 'TBA',
@@ -51,6 +53,10 @@ const Projects = () => {
                 alt={project.title}
                 className="h-40 w-full object-cover rounded mb-4"
               />
+              {/* Caption below the image */}
+              {project.caption && (
+                <p className="text-xs text-gray-500 italic mb-4">{project.caption}</p>
+              )}
               <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
               <p className="text-gray-700 flex-grow">{project.description}</p>
               <div className="flex justify-between mt-4">
