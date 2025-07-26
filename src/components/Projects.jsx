@@ -1,7 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import airplane from '../assets/AIRPLANE.jpg';
+import cars from '../assets/CARS.jpg';
 import airplane_new_zealand from '../assets/airplane_new_zealand.jpg';
+import iowa_house from '../assets/IOWA_HOUSE.jpg';
 
 // PROJECTS
 
@@ -15,18 +17,20 @@ const projects = [
     caption: 'A large jetliner flying through a cloudy sky. Aeroplane airplane boeing 737. Image published under Creative Commons CC0 1.0 Universal Public Domain Dedication license.'
   },
   {
-    title: 'TBA',
-    description: 'TBA.',
-    image: '/assets/project2.png',
-    github: 'https://github.com/yourusername/project2-live',
-    code: 'https://github.com/yourusername/project2-code'
+    title: 'Predicting Used Car Prices Using Linear Regression',
+    description: 'Built a linear regression model in R to predict the prices of used cars based on features such as mileage, brand, model, and engine size.',
+    image: cars,
+    github: 'https://github.com/malopez3/Predicting-Used-Car-Prices-Using-Linear-Regression',
+    code: 'https://github.com/malopez3/Predicting-Used-Car-Prices-Using-Linear-Regression/blob/main/STAT525%20Car%20Project%20Report.Rmd',
+    caption: 'Used cars in parking lot. Image published under Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)'
   },
   {
-    title: 'TBA',
-    description: 'TBA.',
-    image: '/assets/project2.png',
-    github: 'https://github.com/yourusername/project2-live',
-    code: 'https://github.com/yourusername/project2-code'
+    title: 'Housing Price Prediction using Decision Tree Machine Learning',
+    description: 'Utilized decision tree learning in Python to predict housing prices in Ames, Iowa using features like square footage, neighborhood, and overall quality. Employed pandas for data preprocessing, and used seaborn, matplotlib, and scikit-learn for visualization, model building, and evaluation.',
+    image: iowa_house,
+    github: 'https://github.com/malopez3/housing_prices_prediction/blob/main/Ames%20Housing%20Price%20Machine%20Learning.ipynb',
+    code: 'https://github.com/malopez3/housing_prices_prediction/blob/main/Ames%20Housing%20Price%20Machine%20Learning.ipynb',
+    caption: 'Home in Iowa. Image published under Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)'
   },
   // Add more projects here
 ];
