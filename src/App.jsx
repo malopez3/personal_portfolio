@@ -4,6 +4,7 @@ import About from './components/About';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import { FaGithub, FaLinkedin } from 'react-icons/fa'; // ← New icons here
+import { motion } from "framer-motion";
 
 function App() {
     return (
@@ -17,8 +18,23 @@ function App() {
         <main className="flex-grow flex items-center justify-center py-16 text-black">
         <div className="text-center space-y-6">
           {/* Greeting and Name */}
-          <h1 className="text-5xl font-extrabold">Hello, I'm Marco Lopez</h1>
-          <h2 className="text-2xl font-medium text-gray-800">I'm a Data Scientist</h2>
+          {/* Transition with fade-in */}
+          <motion.h1
+            className = "text-5xl font-extrabold"
+            initial = {{opacity: 0}}
+            animate = {{opacity: 1}}
+            transition = {{duration: 2}}
+            >
+            Hello, I'm Marco Lopez
+          </motion.h1>
+          <motion.h2
+            className="text-2xl font-medium text-gray-800"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2, delay: 0.5 }}
+            >
+            I'm a Data Scientist
+          </motion.h2>
 
           {/* Social Icons (linkedin and github) */}
           <div className = "flex justify-center gap-6 pt-4">

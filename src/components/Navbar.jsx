@@ -1,13 +1,22 @@
-import React from 'react';
-import { FaUser, FaBriefcase, FaFolderOpen, FaEnvelope } from 'react-icons/fa';
+import React, {useState} from 'react';
+import { FaUser, FaBriefcase, FaFolderOpen, FaEnvelope, FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
-  return (
-    <nav className="w-full bg-white text-black h-[17vh] flex justify-between items-center px-4 md:px-8 lg:px-16">
-      <div className="text-2xl font-bold">Marco Lopez</div>
+  const [isOpen, setIsOpen] = useState(false);
 
-      {/* Navigation Links with Icons */}
-      <ul className="flex gap-6 text-lg">
+  return (
+    <nav className="sticky top-0 z-50 w-full bg-white text-black h-[17vh] flex justify-between items-center px-4 md:px-8 lg:px-16">
+      {/* WEBSITE TITLE AND LINK*/}
+      <button
+        onClick={() => window.location.reload()}
+        className="text-[2.25rem] font-bold bg-transparent border-none cursor-pointer p-0 m-0 hover:underline hidden sm:hidden md:block"
+        // Hide on small screens, show md+
+      >
+      Marco Lopez
+      </button>
+
+      {/* Desktop Navigation Links with Icons */}
+      <ul className="hidden md:flex gap-6 text-lg">
         <li>
           <a href="#about" className="flex items-center gap-2 hover:underline focus:outline-none">
             <FaUser /> About
@@ -24,6 +33,49 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
+
+       {/* Mobile Hamburger Menu Button Starts here*/}
+
+       <button
+        className="md:hidden p-2 focus:outline-none"
+        onClick={() => setIsOpen(!isOpen)}
+        aria-label="Toggle menu"
+      >
+        {isOpen ? <FaTimes size={28} /> : <FaBars size={28} />}
+      </button>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="absolute top-[17vh] left-0 w-full bg-white shadow-md flex flex-col items-center py-4 md:hidden z-40">
+          <a
+            href="#about"
+            className="py-2 text-lg w-full text-center hover:underline"
+            onClick={() => setIsOpen(false)}
+          >
+            <div className="flex justify-center items-center gap-2">
+              <FaUser /> About
+            </div>
+          </a>
+          <a
+            href="#experience"
+            className="py-2 text-lg w-full text-center hover:underline"
+            onClick={() => setIsOpen(false)}
+          >
+            <div className="flex justify-center items-center gap-2">
+              <FaBriefcase /> Experience
+            </div>
+          </a>
+          <a
+            href="#projects"
+            className="py-2 text-lg w-full text-center hover:underline"
+            onClick={() => setIsOpen(false)}
+          >
+            <div className="flex justify-center items-center gap-2">
+              <FaFolderOpen /> Projects
+            </div>
+          </a>
+        </div>
+      )}
     </nav>
   );
 };
