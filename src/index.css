@@ -3,26 +3,28 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Ensure full height */
+/* ✅ Ensure full height and base theming */
 html,
 body,
 #root {
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: #251b5a;
+  color: white;
   overflow-x: hidden;
-  scroll-padding-top: 4rem; /* adjust to your navbar height */
+  scroll-padding-top: 4rem; /* adjust to your navbar height if needed */
 }
 
-/* Typography & theming */
+/* ✅ Typography & theme defaults */
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color-scheme: dark;
+  color: white;
+  background-color: #251b5a;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -30,27 +32,23 @@ body,
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: black;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  /* Removed display: flex and place-items: center to allow full layout */
-  margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
+/* ✅ Headings and text elements */
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
 
+/* ✅ Link styling */
+a {
+  font-weight: 500;
+  color: white;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #bbbbff;
+}
+
+/* ✅ Button styling */
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -70,15 +68,10 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* ✅ Icons – make them white */
+svg,
+i,
+.icon {
+  fill: white;
+  color: white;
 }

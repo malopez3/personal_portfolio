@@ -20,7 +20,7 @@ const projects = [
     title: 'Predicting Used Car Prices Using Linear Regression',
     description: 'Built a linear regression model in R to predict the prices of used cars based on features such as mileage, brand, model, and engine size.',
     image: cars,
-    github: 'https://github.com/malopez3/Predicting-Used-Car-Prices-Using-Linear-Regression',
+    github: 'https://github.com/malopez3/Predicting-Used-Car-Prices-Using-Linear-Regression/blob/main/STAT525-Car-Project-Report.pdf',
     code: 'https://github.com/malopez3/Predicting-Used-Car-Prices-Using-Linear-Regression/blob/main/STAT525%20Car%20Project%20Report.Rmd',
     caption: 'Used cars in parking lot. Image published under Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)'
   },
@@ -37,7 +37,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 text-black bg-white">
+    <section id="projects" className="py-20 text-white bg-[#251b5a]">
       <motion.div
         className="max-w-4xl mx-auto px-4"
         initial={{ opacity: 0, y: 50 }}
@@ -50,7 +50,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="border border-gray-200 rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col"
+              className="border border-white-200 rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col bg-[#1a76d2]"
             >
               <img
                 src={project.image}
@@ -59,10 +59,10 @@ const Projects = () => {
               />
               {/* Caption below the image */}
               {project.caption && (
-                <p className="text-xs text-gray-500 italic mb-4">{project.caption}</p>
+                <p className="text-xs text-white-500 italic mb-4">{project.caption}</p>
               )}
               <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-              <p className="text-gray-700 flex-grow">{project.description}</p>
+              <p className="text-white-700 flex-grow">{project.description}</p>
               <div className="flex justify-between mt-4">
                 <a
                   href={project.github}

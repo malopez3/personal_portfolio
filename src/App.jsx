@@ -14,8 +14,8 @@ function App() {
 
       {/* PADDED MAIN CONTENT BELOW */}
 
-    <div className="h-screen flex flex-col px-4 md:px-16 lg:px-32 xl:px-48 bg-white">
-        <main className="flex-grow flex items-center justify-center py-16 text-black">
+    <div className="h-screen flex flex-col px-4 md:px-16 lg:px-32 xl:px-48 bg-[#251b5a]">
+        <main className="flex-grow flex items-center justify-center py-16 text-white">
         <div className="text-center space-y-6">
           {/* Greeting and Name */}
           {/* Transition with fade-in */}
@@ -28,7 +28,7 @@ function App() {
             Hello, I'm Marco Lopez
           </motion.h1>
           <motion.h2
-            className="text-2xl font-medium text-gray-800"
+            className="text-2xl font-medium text-white-800"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 2, delay: 0.5 }}

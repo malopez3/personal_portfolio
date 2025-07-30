@@ -5,12 +5,11 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 w-full bg-white text-black h-[17vh] flex justify-between items-center px-4 md:px-8 lg:px-16">
+    <nav className="sticky top-0 z-50 w-full bg-[#251b5a] text-white h-[17vh] flex justify-between items-center px-4 md:px-8 lg:px-16">
       {/* WEBSITE TITLE AND LINK*/}
       <button
         onClick={() => window.location.reload()}
-        className="text-[2.25rem] font-bold bg-transparent border-none cursor-pointer p-0 m-0 hover:underline hidden sm:hidden md:block"
-        // Hide on small screens, show md+
+        className="text-[2.25rem] font-bold !bg-[#251b5a] !text-white border-none cursor-pointer p-0 m-0 hover:underline hidden sm:hidden md:block"
       >
       Marco Lopez
       </button>
