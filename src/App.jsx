@@ -39,7 +39,7 @@ function App() {
           {/* Social Icons (linkedin and github) */}
           <div className = "flex justify-center gap-6 pt-4">
             <a
-              href = "https://www.linkedin.com/in/marco-lopez-926a93283/" //Update link
+              href = "https://www.linkedin.com/in/marco-lopez-926a93283/"
               target = "_blank"
               rel = "noopener noreferrer"
               className = "text-black hover:text-gray-600 transition"
@@ -63,12 +63,32 @@ function App() {
 
       {/* FOOTER */}
 
-      <footer className="text-center py-4 text-sm text-gray-500">
-        © {new Date().getFullYear()} Marco Lopez. All rights reserved.
+      <footer className="text-center text-sm text-white bg-[#251b5a] border-t border-white-300 py-4 
+      fixed bottom-0 left-0 w-full z-50 md:static">
+        <div className="flex justify-center gap-6 mb-2 bg-[#251b5a]">
+        <a
+          href="https://www.linkedin.com/in/marco-lopez-926a93283/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-2xl hover:text-white-700"
+        >
+        <FaLinkedin />
+        </a>
+        <a
+          href="https://github.com/malopez3"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-2xl hover:text-white-600"
+        >
+        <FaGithub />
+        </a>
+        </div>
 
-      <p className="mt-2 text-xs text-gray-400 max-w-xl mx-auto px-4">
-        Logos are used for identification and educational purposes only. All trademarks and brands are the property of their respective owners.
-      </p>
+        <p>© {new Date().getFullYear()} Marco Lopez. All rights reserved.</p>
+
+        <p className="mt-1 text-xs text-white-500 max-w-xl mx-auto px-4">
+          All trademarks, logos, and images are the property of their respective owners and are used for identification and educational purposes only.
+        </p>
       </footer>
     </div>
     </>

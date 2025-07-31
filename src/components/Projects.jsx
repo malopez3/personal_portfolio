@@ -4,6 +4,9 @@ import airplane from '../assets/AIRPLANE.jpg';
 import cars from '../assets/CARS.jpg';
 import airplane_new_zealand from '../assets/airplane_new_zealand.jpg';
 import iowa_house from '../assets/IOWA_HOUSE.jpg';
+import mall_customers from '../assets/mall_customers.jpg'
+import weather from '../assets/WEATHER.jpg'
+import COVID from '../assets/COVID.jpg'
 
 // PROJECTS
 
@@ -32,6 +35,31 @@ const projects = [
     code: 'https://github.com/malopez3/housing_prices_prediction/blob/main/Ames%20Housing%20Price%20Machine%20Learning.ipynb',
     caption: 'Home in Iowa. Image published under Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)'
   },
+  {
+    title: 'Mall Customer Segmentation',
+    description: 'Performed customer segmentation using K-means clustering on the Mall Customer dataset to identify  clusters based on spending behavior and income. Applied K-nearest neighbors (KNN) algorithm to classify new data points. Implemented in Python using pandas, scikit-learn, and matplotlib.',
+    image: mall_customers,
+    github: 'https://github.com/malopez3/mall_customer_segmentation/blob/main/mall_customer_segmentation.ipynb',
+    code: 'https://github.com/malopez3/mall_customer_segmentation/blob/main/mall_customer_segmentation.ipynb',
+    caption: 'A group of multiethnic shoppers discussing on the sidewalk (CC0 1.0 Universal)'
+  },
+  {
+    title: 'Massachusetts Weather Data Analysis',
+    description: 'Conducted a statistical analysis comparing weather patterns between Boston, MA and Amherst, MA using Monte Carlo simulation and bootstrapping techniques. Leveraged R and packages such as dplyr, ggplot2, and boot to assess difference in mean temperature between the two locations.',
+    image: weather,
+    github: 'https://github.com/malopez3/weather_data_analysis/blob/main/Copy%20of%20STAT%20535_Final%20Project%20(1).pdf',
+    code: 'https://github.com/malopez3/weather_data_analysis/blob/main/STAT535%20FINAL%20PROJECT%20(2).Rmd',
+    caption: 'Blue sky and clouds (public domain)'
+  },
+  {
+    title: 'New York COVID-19 Statistical Analysis',
+    description: 'Investigates the relationship between COVID-19 outcomes (cases and deaths) and demographic factors across New York. Employed statistical methods including correlation coefficients and linear regression models to identify potential associations. Used tools in R, such as ggplot2, dplyr, and stats.',
+    image: COVID,
+    github: 'https://github.com/malopez3/nycovidanalysis/blob/main/NYCOVIDANALYSIS.pdf',
+    code: 'https://github.com/malopez3/nycovidanalysis/blob/main/NYCOVIDANALYSIS.Rmd',
+    caption: 'COVID-19. Moody Insurance Agency. Published under Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)'
+  },
+  
   // Add more projects here
 ];
 
