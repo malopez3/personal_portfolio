@@ -74,7 +74,7 @@ const Projects = () => {
         transition={{ duration: 1.2, ease: 'easeOut' }}
       >
         <h2 className="text-4xl font-bold text-center mb-12">Projects</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pb-20">
           {projects.map((project, index) => (
             <div
               key={index}

@@ -14,7 +14,7 @@ function App() {
 
       {/* PADDED MAIN CONTENT BELOW */}
 
-    <div className="h-screen flex flex-col px-4 md:px-16 lg:px-32 xl:px-48 bg-[#251b5a]">
+    <div className="h-screen flex flex-col px-4 md:px-16 lg:px-32 xl:px-48 bg-[#251b5a] pb-20">
         <main className="flex-grow flex items-center justify-center py-16 text-white">
         <div className="text-center space-y-6">
           {/* Greeting and Name */}
