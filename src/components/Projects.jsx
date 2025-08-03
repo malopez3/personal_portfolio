@@ -17,7 +17,7 @@ const projects = [
     image: airplane_new_zealand,
     github: 'https://github.com/malopez3/airline_data_analysis/blob/main/Airline%20Data%20Analysis.ipynb',
     code: 'https://github.com/malopez3/airline_data_analysis/blob/main/Airline%20Data%20Analysis.ipynb',
-    caption: 'A large jetliner flying through a cloudy sky. Aeroplane airplane boeing 737. Image published under Creative Commons CC0 1.0 Universal Public Domain Dedication license.'
+    caption: 'A large jetliner flying through a cloudy sky. Aeroplane airplane boeing 737.'
   },
   {
     title: 'Predicting Used Car Prices Using Linear Regression',
@@ -25,7 +25,7 @@ const projects = [
     image: cars,
     github: 'https://github.com/malopez3/Predicting-Used-Car-Prices-Using-Linear-Regression/blob/main/STAT525-Car-Project-Report.pdf',
     code: 'https://github.com/malopez3/Predicting-Used-Car-Prices-Using-Linear-Regression/blob/main/STAT525%20Car%20Project%20Report.Rmd',
-    caption: 'Used cars in parking lot. Image published under Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)'
+    caption: 'Used cars in parking lot.'
   },
   {
     title: 'Housing Price Prediction using Decision Tree Machine Learning',
@@ -33,7 +33,7 @@ const projects = [
     image: iowa_house,
     github: 'https://github.com/malopez3/housing_prices_prediction/blob/main/Ames%20Housing%20Price%20Machine%20Learning.ipynb',
     code: 'https://github.com/malopez3/housing_prices_prediction/blob/main/Ames%20Housing%20Price%20Machine%20Learning.ipynb',
-    caption: 'Home in Iowa. Image published under Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)'
+    caption: 'Home in Iowa.'
   },
   {
     title: 'Mall Customer Segmentation',
@@ -41,7 +41,7 @@ const projects = [
     image: mall_customers,
     github: 'https://github.com/malopez3/mall_customer_segmentation/blob/main/mall_customer_segmentation.ipynb',
     code: 'https://github.com/malopez3/mall_customer_segmentation/blob/main/mall_customer_segmentation.ipynb',
-    caption: 'A group of multiethnic shoppers discussing on the sidewalk (CC0 1.0 Universal)'
+    caption: 'A group of multiethnic shoppers discussing on the sidewalk.'
   },
   {
     title: 'Massachusetts Weather Data Analysis',
@@ -49,7 +49,7 @@ const projects = [
     image: weather,
     github: 'https://github.com/malopez3/weather_data_analysis/blob/main/Copy%20of%20STAT%20535_Final%20Project%20(1).pdf',
     code: 'https://github.com/malopez3/weather_data_analysis/blob/main/STAT535%20FINAL%20PROJECT%20(2).Rmd',
-    caption: 'Blue sky and clouds (public domain)'
+    caption: 'Blue sky and clouds.'
   },
   {
     title: 'New York COVID-19 Statistical Analysis',
@@ -57,7 +57,7 @@ const projects = [
     image: COVID,
     github: 'https://github.com/malopez3/nycovidanalysis/blob/main/NYCOVIDANALYSIS.pdf',
     code: 'https://github.com/malopez3/nycovidanalysis/blob/main/NYCOVIDANALYSIS.Rmd',
-    caption: 'COVID-19. Moody Insurance Agency. Published under Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)'
+    caption: 'COVID-19.'
   },
   
   // Add more projects here

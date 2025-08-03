@@ -14,7 +14,7 @@ function App() {
 
       {/* PADDED MAIN CONTENT BELOW */}
 
-    <div className="h-screen flex flex-col px-4 md:px-16 lg:px-32 xl:px-48 bg-[#251b5a] pb-20">
+    <div className="h-screen flex flex-col px-4 md:px-16 lg:px-32 xl:px-48 bg-[#251b5a]">
         <main className="flex-grow flex items-center justify-center py-16 text-white">
         <div className="text-center space-y-6">
           {/* Greeting and Name */}
@@ -87,7 +87,7 @@ function App() {
         <p>© {new Date().getFullYear()} Marco Lopez. All rights reserved.</p>
 
         <p className="mt-1 text-xs text-white-500 max-w-xl mx-auto px-4">
-          All trademarks, logos, and images are the property of their respective owners and are used for identification and educational purposes only.
+          All logos and images are the property of their respective owners and are used for identification and educational purposes only.
         </p>
       </footer>
     </div>
