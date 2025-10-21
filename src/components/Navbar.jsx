@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 w-full bg-[#251b5a] text-white h-[17vh] flex justify-between items-center px-4 md:px-8 lg:px-16">
+    <nav className="sticky top-0 z-50 w-full bg-[#251b5a] text-white h-[12vh] flex justify-between items-center px-4 md:px-8 lg:px-16">
       {/* WEBSITE TITLE AND LINK*/}
       <button
         onClick={() => window.location.reload()}
@@ -45,7 +45,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="absolute top-[17vh] left-0 w-full bg-black shadow-md flex flex-col items-center py-4 md:hidden z-40">
+        <div className="absolute top-full left-0 w-full bg-black shadow-md flex flex-col items-center py-4 md:hidden z-40">
           <a
             href="#about"
             className="py-2 text-lg w-full text-center hover:underline"

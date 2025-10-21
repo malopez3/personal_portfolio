@@ -33,7 +33,7 @@ function App() {
             animate={{ opacity: 1 }}
             transition={{ duration: 2, delay: 0.5 }}
             >
-            I'm a Data Scientist
+            Data Scientist
           </motion.h2>
 
           {/* Social Icons (linkedin and github) */}
@@ -62,6 +62,7 @@ function App() {
       <Projects/>
 
       {/* FOOTER */}
+      {/* ICON FOOTER LINKS - always visible on both mobile and desktop*/}
 
       <footer className="text-center text-sm text-white bg-[#251b5a] border-t border-white-300 py-4 
       fixed bottom-0 left-0 w-full z-50 md:static">
@@ -83,12 +84,15 @@ function App() {
         <FaGithub />
         </a>
         </div>
+        {/* Below is hidden on mobile */}
 
+        <div className="hidden md:block">
         <p>© {new Date().getFullYear()} Marco Lopez. All rights reserved.</p>
 
         <p className="mt-1 text-xs text-white-500 max-w-xl mx-auto px-4">
           All logos and images are the property of their respective owners and are used for identification and educational purposes only.
         </p>
+        </div>
       </footer>
     </div>
     </>
