@@ -65,7 +65,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 text-white bg-[#251b5a]">
+    <section id="projects" className="py-20">
       <motion.div
         className="max-w-4xl mx-auto px-4"
         initial={{ opacity: 0, y: 50 }}
@@ -78,7 +78,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="border border-white-200 rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col bg-[#1a76d2]"
+              className="border border-white-200 rounded-lg shadow hover:shadow-lg transition p-4 flex flex-col"
             >
               <img
                 src={project.image}

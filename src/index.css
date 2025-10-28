@@ -3,52 +3,63 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ✅ Ensure full height and base theming */
+/* Full height and base styling */
 html,
 body,
 #root {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #251b5a;
-  color: white;
   overflow-x: hidden;
-  scroll-padding-top: 4rem; /* adjust to your navbar height if needed */
-}
-
-/* ✅ Typography & theme defaults */
-:root {
+  scroll-padding-top: 4rem; /* adjust to your navbar height */
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: dark;
-  color: white;
-  background-color: #251b5a;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ✅ Headings and text elements */
+/* Light / Dark Mode Classes */
+body.light {
+  background-color: #f8fafc;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: #0d1117; /* dark mode background */
+  color: #f8fafc;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Links inherit theme color */
+body.light a {
+  color: black;
+}
+body.dark a {
+  color: #f8fafc;
+}
+a {
+  font-weight: 500;
+  text-decoration: inherit;
+  transition: color 0.25s;
+}
+a:hover {
+  color: #646cff;
+}
+
+/* Headings and text elements */
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-
-/* ✅ Link styling */
-a {
-  font-weight: 500;
-  color: white;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #bbbbff;
+h2, h3, h4, h5, h6 {
+  line-height: 1.2;
 }
 
-/* ✅ Button styling */
+/* Buttons */
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -56,9 +67,10 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: inherit; /* button follows body background */
+  color: inherit; /* text follows body color */
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.25s, background-color 0.25s, color 0.25s;
 }
 button:hover {
   border-color: #646cff;
@@ -68,10 +80,21 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-/* ✅ Icons – make them white */
+/* Icons / SVGs */
 svg,
 i,
 .icon {
-  fill: white;
-  color: white;
+  color: inherit;
+  fill: currentColor;
+  transition: color 0.25s;
+}
+
+/* Cards / Containers */
+.card {
+  background-color: inherit; /* follow theme */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* light mode border */
+  transition: border-color 0.25s, background-color 0.25s;
+}
+body.dark .card {
+  border-color: rgba(255, 255, 255, 0.1); /* dark mode border */
 }
